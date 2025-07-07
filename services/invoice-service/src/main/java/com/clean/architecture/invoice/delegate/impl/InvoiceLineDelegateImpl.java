@@ -66,7 +66,7 @@ public class InvoiceLineDelegateImpl implements InvoiceLineDelegate {
         if(invoiceLine == null) {
             throw new EntityNotFoundException("InvoiceLine not found with id: " + id);
         }
-        invoiceService.deleteById(id);
+        invoiceLineService.deleteById(id);
         recalculateInvoiceTotalAmount(invoiceLine.getInvoice().getId());
     }
 

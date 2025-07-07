@@ -24,7 +24,7 @@ public class InvoiceLineValidation {
 
     public void validateForModify(InvoiceLine invoiceLine) {
         ValidationResult validationResult = new ValidationResult();
-        if(invoiceLineService.existsById(invoiceLine.getId())) {
+        if(!invoiceLineService.existsById(invoiceLine.getId())) {
             validationResult.addError("id", "The invoice line does not exist");
         }
         validationResult.throwIfInvalid();

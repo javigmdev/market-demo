@@ -1,4 +1,4 @@
-package com.clean.architecture.InvoiceLIne.controller;
+package com.clean.architecture.invoice.controller;
 
 import com.clean.architecture.invoice.delegate.InvoiceLineDelegate;
 import com.clean.architecture.invoice.dto.InvoiceLineDTO;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/InvoiceLIne-lines")
+@RequestMapping("/invoice-lines")
 @RequiredArgsConstructor
 public class InvoiceLineController {
 
